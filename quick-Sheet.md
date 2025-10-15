@@ -55,3 +55,12 @@
 | `--max-rtt-timeout 100ms` | Sets the specified time value as maximum RTT timeout. |
 | `--min-rate 300` | Sets the number of packets that will be sent simultaneously. |
 | `-T <0-5>` | Specifies the specific timing template. |
+
+
+
+## NSE SCRIPTS 
+
+https://nmap.org/nsedoc/scripts/
+```c
+ sudo nmap 10.129.2.28 -p 80 -sV --script {NAME}
+```
