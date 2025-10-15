@@ -203,5 +203,15 @@ ncat -nv --source-port 53 10.129.2.28 50000
 
 ---
 
-
+After the configurations are transferred to the system, our client wants to know if it is possible to find out our target's DNS server version. Submit the DNS server version of the target as the answer.
+```c
     sudo nmap -sUV -p 53 --script dns-nsid 10.129.112.39 -Pn -n --disable-arp-ping --packet-trace -D RND:5 --max-retries 50 --version-intensity 9 -sV
+```
+
+Now our client wants to know if it is possible to find out the version of the running services. Submit the version of the service our client was talking about as the answer.
+
+```c
+    sudo nmap -sV -p- --source-port 53 10.129.2.47
+    sudo nc -vn 10.129.2.47 50000 -p 53
+
+```
