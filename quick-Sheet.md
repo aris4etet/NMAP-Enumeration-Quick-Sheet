@@ -59,8 +59,8 @@
 
 
 ## NSE SCRIPTS 
-
+Now let us move on to HTTP port 80 and see what information and vulnerabilities we can find using the vuln category from NSE.
 https://nmap.org/nsedoc/scripts/
 ```c
- sudo nmap 10.129.2.28 -p 80 -sV --script {NAME}
+ sudo nmap 10.129.2.28 -p 80 -sV --script vuln
 ```
